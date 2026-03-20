@@ -1,0 +1,7 @@
+# Verifica se o número é par
+if numero % 2 == 0:
+    # Se for par, imprime a mensagem
+    print(f"{numero} é par.")
+else:
+    # Se for ímpar, imprime a mensagem
+    print(f"{numero} é ______________.")
