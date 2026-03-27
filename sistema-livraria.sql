@@ -13,3 +13,7 @@ CREATE TABLE Compras (
     FOREIGN KEY (ClienteID) REFERENCES Clientes(ID)
 );
 SELECT * FROM Clientes;
+SELECT c.nomeCliente, c.emailCliente
+FROM Clientes c
+INNER JOIN Compras co ON c.ID = co.ClienteID
+WHERE co.NomeLivro = 'Quarto de Despejo';
